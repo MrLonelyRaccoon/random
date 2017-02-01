@@ -21,7 +21,7 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-    
+
 }
 
 
@@ -32,10 +32,16 @@ function createThirdScene() {
 // This function is called whenever you press the "Go!" button.
 function createRandomScene() {
     // Generate a random number between 0 and 1, and store it in a variable.
-    
+    var myNumber = Math.random()
+  alert(myNumber)
+ }
+
+function flipACoin() {
+var rando = Math.random() 
     // If the number is less than 0.33, call the function to create your first scene.
     
-    
+    if(rando>0.33) {
+  alert("Heads")
     
     // Else, if the number is less than 0.67, call the function to create your second scene.
     
