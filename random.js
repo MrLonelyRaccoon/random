@@ -6,7 +6,9 @@ var namespace = "http://www.w3.org/2000/svg"
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
     makeRect(0,0,200,100,"black")
-    
+    makeCircle(100, 50, 5, "yellow", 1.0)
+    makeCircle(100, 50, 15, "yellow", 0.50)
+
 }
 
 
@@ -14,7 +16,8 @@ function createFirstScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createSecondScene() {
-    makeCircle2(50, 50, 25,"red", 1.0)
+    makeRect(0,0,200,100,"grey")
+    makeCircle(100, 50, 25,"red", 1.0)
 }
 
 
@@ -22,7 +25,9 @@ function createSecondScene() {
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createThirdScene() {
-makeCircle3(100, 100, 25,"blue", 1.0)
+    makeRect(0,0,200,100,"red")
+    makeCircle(100, 50, 25,"blue", 1.0)
+    makeImage("http://vignette1.wikia.nocookie.net/companyofheroes/images/3/38/Soviet_union_flag.png/revision/latest?cb=20130701012145&path-prefix=en", 0, 0, 25, 25, 1)
 }
 
 
