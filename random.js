@@ -6,9 +6,15 @@ var namespace = "http://www.w3.org/2000/svg"
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
     makeRect(0,0,200,100,"black")
+    makeEllipse(100, 50, 30, 40, "white", 0.25)
+    makeEllipse(100, 50, 50, 20, "white", 0.25)
     makeCircle(100, 50, 5, "yellow", 1.0)
     makeCircle(100, 50, 15, "yellow", 0.50)
-
+    var random = Math.random()
+    if(random<0.5) {
+        makeRect(0,0,200,100,"grey")
+        
+    }
 }
 
 
@@ -18,8 +24,12 @@ function createFirstScene() {
 function createSecondScene() {
     makeRect(0,0,200,100,"grey")
     makeCircle(100, 50, 25,"red", 1.0)
+    makeImage("https://pbs.twimg.com/profile_images/770462941338476545/2YztRyUn.jpg", 0, 0, 25, 25, 1)
+    var random = Math.random()
+    if(random<0.5) {
+        makeCircle(50, 50, 25,"blue", 1.0)
 }
-
+}
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
@@ -28,8 +38,11 @@ function createThirdScene() {
     makeRect(0,0,200,100,"red")
     makeCircle(100, 50, 25,"blue", 1.0)
     makeImage("http://vignette1.wikia.nocookie.net/companyofheroes/images/3/38/Soviet_union_flag.png/revision/latest?cb=20130701012145&path-prefix=en", 0, 0, 25, 25, 1)
+     var random = Math.random()
+    if(random<0.5) {
+     makeCircle(70, 20, 25,"green", 1.0)
 }
-
+}
 
 
 
